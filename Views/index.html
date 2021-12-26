@@ -1,0 +1,41 @@
+<html>
+
+<head>
+	<title>URL Shortener - Clone</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/public/css/style.css">
+</head>
+
+<body>
+	<nav id="nav-bar">
+		<h1>URL Shortener - Clone</h1>
+	</nav>
+	<main>
+		<section class="main_content_wrap">
+			<div class="form_wrapper">
+				<form class="form_panel" id="shorten_form" action="api/shorturl" method="POST">
+					<label for="urlInput">Enter a Long URL to shorten it</label>
+          <input id="urlInput" required="required" type="text" name="url">
+          <input id="submitBtn" type="submit" value="Shorten URL">
+        </form>
+        <form class="form_panel" id="shortened_form">
+          <label>Your Long URL</label>
+          <div class="form_field">http://www.npmjs.com/package/valid-url</div>
+          <label>Your Short URL</label>
+          <div class="form_field">http://www.npmjs.com/package/valid-url</div>
+          <input id="redoBtn" type="button" value="Shorten Another">
+        </form>
+      </div>
+      <div class="banner">
+        <h3>Welcome to</h3>
+        <h1>URL Shortener - Clone</h1>
+        <ul>
+          <li>Easy Link Shortening</li>
+          <li>Unique Links</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
